@@ -13,10 +13,11 @@
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
-			"js": ["script.js"]
+			"js": ["script.js", "contentscript.js"]
 		}
 	],
 	"permissions": [
 		"tabs"
-	]
+	],
+	"web_accessible_resources": ["executeQuery.js"]
 }

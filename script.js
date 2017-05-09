@@ -23,19 +23,11 @@ function toggleSidebar() {
 		var sidebar = document.createElement('div');
 		sidebar.id = "mySidebar";
 		sidebar.innerHTML = "\
-		<form style='margin:0; padding:0;' action=''>\
-				<script>\
-				function highlightCSS(){\
-					var query = document.getElementById('pathQueryInput').value;\
-					var x = document.querySelectorAll(query);\
-					// Set the background color of the first <p> element\
-					x[0].style.backgroundColor = 'red';\
-				}\
-			</script>\
+		<form style='margin:0; padding:0;' onsubmit='return highlightCSS();'>\
 				<p>\
 					<select> <option value='css'>CSS</option> <option value='xpath'>XPath</option> </select>\
-					Query: <input type= 'text' style='width:80%' name='name' id='pathQueryInput'>\
-					<button type= 'button' onclick='highlightCSS();'> Evaluate Query</button>\
+					Query: <input type= 'text' style='width:80%' name='name' id='pathQueryInput' autofocus>\
+					<button type= 'submit' onclick='highlightCSS();'> Evaluate Query</button>\
 				</p>\
 			</form>\
 			";
@@ -52,18 +44,5 @@ function toggleSidebar() {
 		document.body.appendChild(sidebar);
 		sidebarOpen = true;
 
-		var x = document.querySelectorAll("body"); 
-
-	// Set the background color of the first <p> element
-		x[0].style.backgroundColor = "red"; 
-		}
+	}
 }
-
-/*function highlightCSS(){
-
-		var query = document.getElementById("pathQueryInput").value;
-		var x = document.querySelectorAll(query); 
-
-	// Set the background color of the first <p> element
-		x[0].style.backgroundColor = "red"; 
-}*/
