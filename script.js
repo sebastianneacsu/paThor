@@ -44,5 +44,7 @@ function toggleSidebar() {
 		document.body.appendChild(sidebar);
 		sidebarOpen = true;
 
+		document.querySelector('head').innerHTML += ("<style> .elementFoundByChromeExtension { background-color:#F00 }</style>");
+
 	}
 }
