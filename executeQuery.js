@@ -15,11 +15,9 @@ function highlightCSS(){
 		var queryResults = document.querySelectorAll(query); 
 
 		if (queryResults.length > 0) {
-		
 		queryResults[0].classList.add("elementFoundByChromeExtension");
-//		queryResults[0].style.backgroundColor = "red";
 
 		}
-
+	
 		return false;
 }
