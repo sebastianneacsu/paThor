@@ -14,10 +14,13 @@ function highlightCSS(){
 		var query = document.getElementById("pathQueryInput").value;
 		var queryResults = document.querySelectorAll(query); 
 
+		document.getElementById("numberOfresultsFromChromeExtension").innerHTML = "Nodes found = " + queryResults.length;
+
 		if (queryResults.length > 0) {
 		queryResults[0].classList.add("elementFoundByChromeExtension");
 
 		}
+
 	
 		return false;
 }

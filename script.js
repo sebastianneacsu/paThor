@@ -29,7 +29,9 @@ function toggleSidebar() {
 					Query: <input type= 'text' style='width:80%' name='name' id='pathQueryInput' autofocus>\
 					<button type= 'submit' onclick='highlightCSS();'> Evaluate Query</button>\
 				</p>\
-			</form>\
+				<p id='numberOfresultsFromChromeExtension'>\
+				</p>\
+		</form>\
 			";
 		sidebar.style.cssText = "\
 		position:fixed;\
