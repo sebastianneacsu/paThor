@@ -25,11 +25,13 @@ function toggleSidebar() {
 		sidebar.innerHTML = "\
 		<form style='margin:0; padding:0;' onsubmit='return highlightCSS();'>\
 				<p>\
-					<select> <option value='css'>CSS</option> <option value='xpath'>XPath</option> </select>\
+					<select id='querySelectOption'> <option value='css'>CSS</option> <option value='xpath'>XPath</option> </select>\
 					Query: <input type= 'text' style='width:80%' name='name' id='pathQueryInput' autofocus>\
 					<button type= 'submit' onclick='highlightCSS();'> Evaluate Query</button>\
 				</p>\
 				<p id='numberOfresultsFromChromeExtension'>\
+				</p>\
+				<p id='xpathSearchChrome'>\
 				</p>\
 		</form>\
 			";
@@ -43,6 +45,7 @@ function toggleSidebar() {
 		box-shadow:inset 0 0 1em black;\
 		z-index:999999;\
 		";
+
 		document.body.appendChild(sidebar);
 		sidebarOpen = true;
 
