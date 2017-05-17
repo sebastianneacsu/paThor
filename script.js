@@ -43,7 +43,7 @@ function toggleSidebar() {
 		height:25%;\
 		background:white;\
 		box-shadow:inset 0 0 1em black;\
-		z-index:999999;\
+		z-index:2147483647;\
 		";
 
 		document.body.appendChild(sidebar);
