@@ -40,7 +40,7 @@ function toggleSidebar() {
 		bottom:0px;\
 		left:0px;\
 		width:100%;\
-		height:25%;\
+		height:10%;\
 		background:white;\
 		box-shadow:inset 0 0 1em black;\
 		z-index:2147483647;\
